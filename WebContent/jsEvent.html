@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript">
+		function getFocus(x){
+			alert(x.name + "의 위치에 커서가 존재함.");
+		}
+		
+		function offFocus(x){
+			alert(x.name + "의 위치에서 커서가 빠져나감.");
+		}
+	</script>
+</head>
+<body>
+	<form action="" name="test">
+		이름 : <input type="text" name="name" onfocus="getFocus(this)" onblur="offFocus(this)">
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
