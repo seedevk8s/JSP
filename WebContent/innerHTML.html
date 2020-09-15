@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript">
+	//ID값을 이용해서 엘리먼트 얻어오기
+	//document.getElementById('ID값')
+		function btnOnClick(){
+			var div = document.getElementById('testDiv');
+			div.innerHTML = "하이!!! " + document.testFrm.name.value + "님!!!";
+		}
+	</script>
+</head>
+<body>
+	<form action="" name="testFrm">
+		<label>이름 : 
+			<input type="text" id="name" name="name" size="20" />
+			<input type="button" value="전송" onclick="btnOnClick()">
+		</label>
+		<div id="testDiv"></div>
+	</form>
+</body>
+</html>
